@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jessicabpetersen/learning-config-server
+          username:  jessicabpetersen
+          password: 1909.inter
+          default-label: main
+          search-paths:
+          - 'greeting-service*'
+  
